@@ -5,7 +5,7 @@ export const PlayerContext = createContext();
 
 const PlayerContextProvider = (props)=>{
     const audioRef = useRef();
-    const seekDg = useRef();
+    const seekBg = useRef();
     const seekbar = useRef();
 
     const [track,setTrack]=useState(songsData[0]);
@@ -50,6 +50,9 @@ const PlayerContextProvider = (props)=>{
             setPlayStatus(true);
         }
     }
+    const seekSong =async (e)=>{
+        audioRef.current.currentTime=((e.nativeEvent.offsetX / seekBg.current.offsetWidth)*(audioRef.current.duration));
+    }
     useEffect(()=>{
         setTimeout(()=>{
             audioRef.current.ontimeupdate=()=>{
@@ -69,7 +72,7 @@ const PlayerContextProvider = (props)=>{
     },[audioRef])
     const contextvalue = {
         audioRef,
-        seekDg,
+        seekBg,
         seekbar,
         track,setTrack,
         playStatus,setPlayStatus,
@@ -77,6 +80,7 @@ const PlayerContextProvider = (props)=>{
         play,pause,
         playWithId,
         previous,next,
+        seekSong
     }
 
     return(
