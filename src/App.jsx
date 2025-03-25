@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './index.css';
 import Sidebar from './components/sidebar';
 import Player from './components/Player';
 import Display from './components/Display';
+import {PlayerContext} from './context/PlayerContext'
 const App = () => {
+
+  const {audioRef,track} = useContext(PlayerContext)
+  console.log("asdfad");
+  console.log(track);
   return (
     <div className='h-screen bg-black'>
       <div className='h-[90%] flex'>
@@ -11,7 +16,7 @@ const App = () => {
         <Display/>
       </div>
       <Player/>
-      <audio preload='auto'></audio>
+      <audio ref={audioRef} src={track.file} preload='auto'></audio>
 
     </div>
   )
