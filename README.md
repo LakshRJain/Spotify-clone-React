@@ -48,3 +48,26 @@ npm install
 npm run dev
 ```
 >Vite will start a local server. Open it in your browser at http://localhost:5173 (default).
+
+
+## 👤 Author
+
+**Laksh R Jain**  
+📧 jainlaksh2006@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/lakshjain22/)  
+🐙 [GitHub](https://github.com/LakshRJain)
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for educational purposes only. It does not stream music or connect to Spotify's backend.
+
+---
+
+## ✅ Future Enhancements
+
+- 🎵 Spotify Web API integration  
+- 📜 Dynamic playlist generation  
+- 💾 Firebase integration for saved playlists  
+- 🎚️ Volume and seekbar enhancements
