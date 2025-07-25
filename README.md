@@ -1,12 +1,50 @@
-# React + Vite
+# 🎧 Spotify Front-End Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based front-end clone of Spotify's web player interface. This project features a functional and responsive UI that includes playback controls such as **Play**, **Pause**, **Next**, and **Previous**, and plays songs locally from the frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎓 Tutorial Source
 
-## Expanding the ESLint configuration
+This project was built by following a YouTube tutorial to learn and practice React UI development.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📺 **Tutorial:** [React Spotify Clone Tutorial](https://youtu.be/amFYvQK4huo?si=qB5DkeWrprbUzonF)  
+👨‍🏫 **Creator:** [GreatStack]
+
+> This project was extended and customized beyond the tutorial for additional learning and personal touches.
+
+---
+
+## 🚀 Features
+
+- 🎵 Play/Pause/Next/Previous controls
+- 🎧 Local audio playback
+- 🎨 Spotify-like dark UI
+- 📂 Album thumbnails and song metadata
+- 🧪 Interactive buttons and layout
+
+---
+
+## ⚙️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- HTML5 + CSS3
+- JavaScript (ES6+)
+---
+
+## 🔧 Getting Started
+1. Clone the Repository
+``` bash
+git clone https://github.com/yourusername/spotify-clone.git
+cd spotify-clone
+```
+2. Install Dependencies
+``` bash
+npm install
+```
+3. Run the Dev Server
+``` bash
+npm run dev
+```
+>Vite will start a local server. Open it in your browser at http://localhost:5173 (default).
